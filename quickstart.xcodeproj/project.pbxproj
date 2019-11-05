@@ -14,6 +14,7 @@
 		842C10802366F3EF009B579F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842C107E2366F3EF009B579F /* LaunchScreen.storyboard */; };
 		842C108B2366F3EF009B579F /* quickstartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C108A2366F3EF009B579F /* quickstartTests.swift */; };
 		842C10962366F3EF009B579F /* quickstartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C10952366F3EF009B579F /* quickstartUITests.swift */; };
+		84CAA52823714EA700BA9988 /* BtnNextController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CAA52723714EA700BA9988 /* BtnNextController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		842C10912366F3EF009B579F /* quickstartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quickstartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		842C10952366F3EF009B579F /* quickstartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quickstartUITests.swift; sourceTree = "<group>"; };
 		842C10972366F3EF009B579F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84CAA52723714EA700BA9988 /* BtnNextController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnNextController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		842C10742366F3ED009B579F /* quickstart */ = {
 			isa = PBXGroup;
 			children = (
+				84CAA52623714E1700BA9988 /* Controllers */,
 				842C10752366F3ED009B579F /* AppDelegate.swift */,
 				842C10772366F3ED009B579F /* ViewController.swift */,
 				842C10792366F3ED009B579F /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				842C10972366F3EF009B579F /* Info.plist */,
 			);
 			path = quickstartUITests;
+			sourceTree = "<group>";
+		};
+		84CAA52623714E1700BA9988 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84CAA52723714EA700BA9988 /* BtnNextController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				842C10782366F3ED009B579F /* ViewController.swift in Sources */,
+				84CAA52823714EA700BA9988 /* BtnNextController.swift in Sources */,
 				842C10762366F3ED009B579F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -418,7 +430,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

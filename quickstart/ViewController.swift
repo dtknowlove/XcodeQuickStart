@@ -12,12 +12,25 @@ class ViewController: UIViewController {
 
     
     @IBOutlet weak var IBTitle: UILabel!
-    override func viewDidLoad() {
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         IBTitle.text="这是代码设置的 Hello world!"
-        print(IBTitle.text)
+        print(IBTitle!.text)
+    }
+    
+    @IBAction func IBBtnTest(_ sender: UIButton)
+    {
+        print(sender.titleLabel!.text)
+        print("点击后显示")
     }
 
 
+    @IBAction func IBBtnNext(_ sender: Any)
+    {
+        let controller=storyboard!.instantiateViewController(withIdentifier: "BtnNext")
+        present(controller, animated: true, completion: nil)
+    }
 }
 
