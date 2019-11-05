@@ -8,9 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    
+class ViewController: UIViewController
+{
     @IBOutlet weak var IBTitle: UILabel!
     
     override func viewDidLoad()
@@ -26,10 +25,27 @@ class ViewController: UIViewController {
         print("点击后显示")
     }
 
-
     @IBAction func IBBtnNext(_ sender: Any)
     {
         let controller=storyboard!.instantiateViewController(withIdentifier: "BtnNext")
+        present(controller, animated: true, completion: nil)
+    }
+    
+    @IBOutlet weak var TFUserName: UITextField!
+    @IBAction func IBGetUserName(_ sender: Any)
+    {
+        let userName = TFUserName!.text
+        if(userName!.isEmpty)
+        {
+            print("用户名不能为空！")
+            return
+        }
+        print("当前用户名为\(userName)!")
+    }
+    
+    @IBAction func IBShowImage(_ sender: Any)
+    {
+        let controller = storyboard!.instantiateViewController(withIdentifier: "Image")
         present(controller, animated: true, completion: nil)
     }
 }

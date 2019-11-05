@@ -18,38 +18,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello world!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vF-W1-ae1">
-                                <rect key="frame" x="27" y="406" width="348" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gg-6G-E0P">
-                                <rect key="frame" x="40" y="467" width="243" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="这是一个按钮，点一下试试">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.26907231300472478" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="IBBtnTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M4j-Sr-KwH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="paj-on-L3Q">
-                                <rect key="frame" x="40" y="576" width="243" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="下一页"/>
-                                <connections>
-                                    <action selector="IBBtnNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ksv-ch-Mh1"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SQL-W8-Y81">
+                                <rect key="frame" x="20" y="50" width="374" height="273.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello world!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vF-W1-ae1">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                        <color key="backgroundColor" red="0.98746615029873963" green="1" blue="0.59108232655921844" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gg-6G-E0P">
+                                        <rect key="frame" x="0.0" y="40.5" width="374" height="33"/>
+                                        <color key="backgroundColor" red="0.74340112463106356" green="1" blue="0.76262655795427792" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="这是一个按钮，点一下试试">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.26907231300472478" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="IBBtnTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M4j-Sr-KwH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="paj-on-L3Q">
+                                        <rect key="frame" x="0.0" y="93.5" width="374" height="30"/>
+                                        <state key="normal" title="下一页"/>
+                                        <connections>
+                                            <action selector="IBBtnNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ksv-ch-Mh1"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入您的用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YvN-Yl-eC9">
+                                        <rect key="frame" x="0.0" y="143.5" width="374" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSP-MJ-OfV">
+                                        <rect key="frame" x="0.0" y="193.5" width="374" height="30"/>
+                                        <state key="normal" title="获取用户名"/>
+                                        <connections>
+                                            <action selector="IBGetUserName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oFh-S4-5y1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMD-EL-AJ6">
+                                        <rect key="frame" x="0.0" y="243.5" width="374" height="30"/>
+                                        <state key="normal" title="显示图片"/>
+                                        <connections>
+                                            <action selector="IBShowImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yRV-OB-JVK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SQL-W8-Y81" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lae-Wa-DhY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SQL-W8-Y81" secondAttribute="trailing" constant="20" id="sQJ-I9-NML"/>
+                            <constraint firstItem="SQL-W8-Y81" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="v7n-b9-MNQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="IBTitle" destination="5vF-W1-ae1" id="1hr-4O-Jjc"/>
+                        <outlet property="TFUserName" destination="YvN-Yl-eC9" id="qIL-36-5qG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -82,7 +112,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ba-cu-BCb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1071.0144927536232" y="75.669642857142847"/>
+            <point key="canvasLocation" x="991" y="-436"/>
+        </scene>
+        <!--Image Controller-->
+        <scene sceneID="spI-q7-RU4">
+            <objects>
+                <viewController storyboardIdentifier="Image" id="D04-zZ-Wdp" customClass="ImageController" customModule="quickstart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i6M-0X-OYX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emotion" translatesAutoresizingMaskIntoConstraints="NO" id="Bne-DT-Jws">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlI-Fg-fFW">
+                                <rect key="frame" x="20" y="64" width="83" height="30"/>
+                                <color key="backgroundColor" red="0.74340112459999996" green="1" blue="0.76262655800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <action selector="IBBack:" destination="D04-zZ-Wdp" eventType="touchUpInside" id="vxA-x9-lbh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tET-oS-xwg" firstAttribute="bottom" secondItem="Bne-DT-Jws" secondAttribute="bottom" id="KQk-FK-z6E"/>
+                            <constraint firstItem="Bne-DT-Jws" firstAttribute="top" secondItem="tET-oS-xwg" secondAttribute="top" id="USQ-Oh-A12"/>
+                            <constraint firstItem="zlI-Fg-fFW" firstAttribute="leading" secondItem="tET-oS-xwg" secondAttribute="leading" constant="20" id="aQb-VI-zMH"/>
+                            <constraint firstItem="zlI-Fg-fFW" firstAttribute="top" secondItem="tET-oS-xwg" secondAttribute="top" constant="20" id="pcP-zp-0pR"/>
+                            <constraint firstItem="Bne-DT-Jws" firstAttribute="leading" secondItem="tET-oS-xwg" secondAttribute="leading" id="t5o-6s-u0T"/>
+                            <constraint firstItem="tET-oS-xwg" firstAttribute="trailing" secondItem="Bne-DT-Jws" secondAttribute="trailing" id="w9t-fP-C0A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tET-oS-xwg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bnt-Y3-tdw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989.85507246376824" y="293.97321428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="emotion" width="80" height="80"/>
+    </resources>
 </document>
