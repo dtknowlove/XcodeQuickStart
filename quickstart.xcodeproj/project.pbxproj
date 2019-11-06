@@ -16,6 +16,7 @@
 		842C10962366F3EF009B579F /* quickstartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C10952366F3EF009B579F /* quickstartUITests.swift */; };
 		84CAA52823714EA700BA9988 /* BtnNextController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CAA52723714EA700BA9988 /* BtnNextController.swift */; };
 		84CAA52A23715DE900BA9988 /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CAA52923715DE900BA9988 /* ImageController.swift */; };
+		84D19E2D2372ADE2000A0765 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D19E2C2372ADE2000A0765 /* ListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		842C10972366F3EF009B579F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84CAA52723714EA700BA9988 /* BtnNextController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnNextController.swift; sourceTree = "<group>"; };
 		84CAA52923715DE900BA9988 /* ImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
+		84D19E2C2372ADE2000A0765 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				84CAA52723714EA700BA9988 /* BtnNextController.swift */,
 				84CAA52923715DE900BA9988 /* ImageController.swift */,
+				84D19E2C2372ADE2000A0765 /* ListController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				842C10782366F3ED009B579F /* ViewController.swift in Sources */,
+				84D19E2D2372ADE2000A0765 /* ListController.swift in Sources */,
 				84CAA52823714EA700BA9988 /* BtnNextController.swift in Sources */,
 				842C10762366F3ED009B579F /* AppDelegate.swift in Sources */,
 				84CAA52A23715DE900BA9988 /* ImageController.swift in Sources */,

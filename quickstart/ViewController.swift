@@ -48,5 +48,11 @@ class ViewController: UIViewController
         let controller = storyboard!.instantiateViewController(withIdentifier: "Image")
         present(controller, animated: true, completion: nil)
     }
+    
+    @IBAction func IBShowListEvent(_ sender: Any)
+    {
+        let controller=storyboard!.instantiateViewController(withIdentifier: "List")
+        present(controller, animated: true, completion: nil)
+    }
 }
 
